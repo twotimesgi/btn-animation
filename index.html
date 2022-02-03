@@ -11,8 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <script>
-        function btn_animate(){
-            document.getElementById("inner").classList.add("inner-animate")
+        function btn_animate() {
+            document.getElementById("btn").classList.add("btn-animate")
             document.getElementById("check").classList.add("check-animate")
             document.getElementById("checkout").classList.add("checkout-animate")
         }
@@ -23,15 +23,13 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <body>
-    <div onclick="btn_animate()" class="btn">
-        <div id="inner" class="inner">
-            <span id="checkout" class="checkout">
-                Checkout
-            </span>
-            <span id="check" class="check">
-                <i class="fas fa-check"></i>
-            </span>
-        </div>
+    <div id="btn" onclick="btn_animate()" class="btn">
+        <span id="checkout" class="checkout">
+            Checkout
+        </span>
+        <span id="check" class="check">
+            <i class="fas fa-check"></i>
+        </span>
     </div>
 </body>
 

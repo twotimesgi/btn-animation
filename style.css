@@ -17,22 +17,13 @@ body{
     font-size: 15pt;
     transform: translate(-50%,-50%);
     overflow: hidden;
-}
-
-.inner{
-    width: 300px;
-    height: 50px;
-    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
-    transition: 0.5s width ease-in;
-    border: 1px solid grey;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     cursor: pointer;
     background-color: black;
     color: white;
     border-radius: 10px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+    transition: 0.5s width ease-in;
+    border: 1px solid grey;
 }
 
 .checkout{
@@ -63,9 +54,10 @@ body{
     animation-delay: 1s;
 }
 
-.inner-animate{
+.btn-animate{
     width: 100px;
 }
+
 
 @keyframes boing {
     0%{
