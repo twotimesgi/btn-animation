@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 50px;
+    font-size: 15pt;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+}
+
+.inner{
+    width: 300px;
+    height: 50px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+    transition: 1s width ease-in;
+    border: 1px solid grey;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.checkout{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    transition: top 1s ease;
+
+}
+
+.check{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-300%);
+    transition: 1s transform ease;
+}
+
+.btn:hover .checkout{
+    top: 100px;
+}
+
+.btn:hover .check{
+    transform: translate(-50%,-50%);
+    animation: boing ease 1s;
+    animation-delay: 1s;
+}
+
+.btn:hover .inner{
+    width: 100px;
+}
+
+@keyframes boing {
+    0%{
+        transform: translate(-50%,-50%);
+    }
+    50%{
+        transform: translate(-50%,-50%) scale(150%);
+    }
+}
