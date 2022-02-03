@@ -50,12 +50,14 @@ body{
 
 .check-animate{
     transform: translate(-50%,-50%);
-    animation: boing ease 1s;
+    animation: boing ease 0.4s;
     animation-delay: 1s;
 }
 
 .btn-animate{
     width: 100px;
+    animation: btn-bounce ease 0.4s;
+    animation-delay: 1s;
 }
 
 
@@ -65,5 +67,18 @@ body{
     }
     50%{
         transform: translate(-50%,-50%) scale(150%);
+    }
+}
+
+
+@keyframes btn-bounce {
+    0%{
+        transform: translate(-50%,-50%);
+    }
+    50%{
+        transform: translate(-50%,-50%) scaleX(150%);
+    }
+    100%{
+        transform: translate(-50%,-50%) scaleX(100%);
     }
 }
