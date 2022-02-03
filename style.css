@@ -53,17 +53,17 @@ body{
     font-size: 25px;
 }
 
-.btn:hover .checkout{
+.checkout-animate{
     top: 100px;
 }
 
-.btn:hover .check{
+.check-animate{
     transform: translate(-50%,-50%);
     animation: boing ease 1s;
     animation-delay: 1s;
 }
 
-.btn:hover .inner{
+.inner-animate{
     width: 100px;
 }
 
