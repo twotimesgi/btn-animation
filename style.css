@@ -41,7 +41,7 @@ body{
     top: 50%;
     left: 50%;
     transition: top 1s ease;
-
+    font-size: 15px;
 }
 
 .check{
@@ -50,6 +50,7 @@ body{
     left: 50%;
     transform: translate(-50%,-300%);
     transition: 1s transform ease;
+    font-size: 25px;
 }
 
 .btn:hover .checkout{
